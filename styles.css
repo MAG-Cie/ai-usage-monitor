@@ -127,7 +127,7 @@ section { padding: 68px 0; }
 .plan li { font-size: 14.5px; display: flex; gap: 10px; align-items: flex-start; }
 .plan li::before { content: "✓"; color: var(--real); font-weight: 800; }
 .plan li.off { color: var(--faint); }
-.plan li.off::before { content: "—"; color: var(--faint); }
+.plan li.off::before { display: none; }
 .plan .btn { margin-top: auto; }
 @media (max-width: 720px) { .price-grid { grid-template-columns: 1fr; } }
 

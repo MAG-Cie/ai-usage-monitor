@@ -9,6 +9,15 @@
 <meta property="og:title" content="AI Usage Monitor">
 <meta property="og:description" content="Ta vraie facture IA. Tous providers. En direct.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://mag-cie.github.io/ai-usage-monitor/">
+<meta property="og:site_name" content="AI Usage Monitor">
+<meta property="og:image" content="https://mag-cie.github.io/ai-usage-monitor/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Usage Monitor — Ta vraie facture IA">
+<meta name="twitter:description" content="La dépense IA réelle facturée, face à l'estimation. Tous providers, en direct, 100 % local.">
+<meta name="twitter:image" content="https://mag-cie.github.io/ai-usage-monitor/og-image.png">
 <meta name="theme-color" content="#191817">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d97757'/%3E%3Crect x='8' y='16' width='4' height='8' rx='1.5' fill='%23fff'/%3E%3Crect x='14' y='11' width='4' height='13' rx='1.5' fill='%23fff'/%3E%3Crect x='20' y='7' width='4' height='17' rx='1.5' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
@@ -46,12 +55,12 @@
       <div class="reveal mock" style="animation-delay:.12s" aria-label="Aperçu du widget">
         <div class="bar"><i></i><i></i><i></i><span class="ttl">AI Usage Monitor</span></div>
         <div class="body">
-          <div class="total"><span class="big num">$234.30</span><span class="tag">réel · ce mois</span></div>
-          <div class="caption">4 providers · mis à jour il y a 2&nbsp;min</div>
-          <div class="prow"><span class="pn"><b style="background:#d97757"></b>Anthropic</span><span class="r num">$128.40</span><span class="e num">~$131</span></div>
-          <div class="prow"><span class="pn"><b style="background:#10a37f"></b>OpenAI</span><span class="r num">$71.10</span><span class="e num">~$69</span></div>
-          <div class="prow"><span class="pn"><b style="background:#6467f2"></b>OpenRouter</span><span class="r num">$24.80</span><span class="e num">—</span></div>
-          <div class="prow"><span class="pn"><b style="background:#4285f4"></b>Gemini</span><span class="r num">$10.00</span><span class="e num">~$12</span></div>
+          <div class="total"><span class="big num">$1,247.80</span><span class="tag">réel · ce mois</span></div>
+          <div class="caption">estimation locale : ~$1,010 — <b style="color:var(--est)">+$238 sous le radar</b></div>
+          <div class="prow"><span class="pn"><b style="background:#d97757"></b>Anthropic</span><span class="r num">$612.40</span><span class="e num">~$470</span></div>
+          <div class="prow"><span class="pn"><b style="background:#10a37f"></b>OpenAI</span><span class="r num">$438.10</span><span class="e num">~$452</span></div>
+          <div class="prow"><span class="pn"><b style="background:#6467f2"></b>OpenRouter</span><span class="r num">$147.30</span><span class="e num">—</span></div>
+          <div class="prow"><span class="pn"><b style="background:#4285f4"></b>Gemini</span><span class="r num">$50.00</span><span class="e num">~$38</span></div>
           <div class="legend">
             <span><i style="background:var(--real)"></i>réel (facturé)</span>
             <span><i style="background:var(--est)"></i>estimé (tokens locaux)</span>
@@ -66,17 +75,17 @@
       <div>
         <div class="eyebrow">Le vrai chiffre</div>
         <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800">L'estimation ment. La facture, non.</h2>
-        <p class="muted" style="font-size:17px;margin-top:16px">Compter les tokens localement donne un ordre de grandeur — jamais le montant exact. AI Usage Monitor lit la <b>dépense facturée</b> via les API officielles et l'affiche <b>à côté</b> de l'estimation. Tu vois enfin l'écart, provider par provider.</p>
-        <p class="muted" style="font-size:15px">Réel et estimé ne sont <b>jamais</b> mélangés dans un même total.</p>
+        <p class="muted" style="font-size:17px;margin-top:16px">Le comptage local de tokens ignore ce qui fait vraiment ta facture : <b>écritures/lectures de cache</b> tarifées différemment, remises <b>batch</b>, <b>paliers de volume</b>, prix qui bougent. Sur un mois chargé, l'écart grimpe vite à <b>deux chiffres</b> — dans un sens comme dans l'autre.</p>
+        <p class="muted" style="font-size:15px">AI Usage Monitor lit la <b>dépense facturée</b> via les API officielles et l'affiche à côté de l'estimation. Réel et estimé ne sont <b>jamais</b> mélangés dans un même total.</p>
       </div>
       <div class="gap-card">
-        <div class="gap-head"><span class="k">Anthropic · août</span><span class="gap-delta">estimation +2,1&nbsp;%</span></div>
+        <div class="gap-head"><span class="k">Anthropic · mois chargé</span><span class="gap-delta">estimation −23&nbsp;%</span></div>
         <div class="gap-nums">
-          <div class="b real"><div class="lbl">Réel</div><div class="v num">$128.40</div></div>
-          <div class="b est"><div class="lbl">Estimé</div><div class="v num">$131.10</div></div>
+          <div class="b real"><div class="lbl">Réel facturé</div><div class="v num">$612.40</div></div>
+          <div class="b est"><div class="lbl">Estimé local</div><div class="v num">$470.10</div></div>
         </div>
-        <div class="gap-bar"><span class="fill-r" style="width:66%"></span><span class="fill-e" style="width:34%"></span></div>
-        <p class="muted" style="font-size:12.5px;margin:12px 0 0">L'écart est faible ici — mais sur un mois chargé, il se chiffre en dizaines d'euros. Tu le vois immédiatement.</p>
+        <div class="gap-bar"><span class="fill-r" style="width:57%"></span><span class="fill-e" style="width:43%"></span></div>
+        <p style="font-size:13px;margin:12px 0 0"><b style="color:var(--est)">142&nbsp;$ passés sous le radar</b> <span class="muted">— tokens de cache facturés et paliers non comptés localement. C'est une vraie facture, pas une estimation à 2&nbsp;% près.</span></p>
       </div>
     </div>
   </section>
@@ -150,8 +159,8 @@
             <li>Widget + tableau de bord complets</li>
             <li>Réel vs estimé</li>
             <li>Historique 7 jours</li>
-            <li class="off">Alertes de budget</li>
-            <li class="off">Providers illimités</li>
+            <li class="off">✕&nbsp;Alertes de budget <span class="muted">(Pro)</span></li>
+            <li class="off">✕&nbsp;Providers illimités <span class="muted">(Pro)</span></li>
           </ul>
           <a class="btn ghost" href="#download">Télécharger</a>
         </div>
@@ -200,10 +209,10 @@
 <footer>
   <div class="wrap foot">
     <span>© 2026 MAG&amp;Cie · AI Usage Monitor</span>
-    <span style="display:flex;gap:18px">
+    <span style="display:flex;gap:18px;flex-wrap:wrap">
       <a href="https://github.com/MAG-Cie/ai-usage-monitor" target="_blank" rel="noopener">GitHub</a>
-      <a href="#privacy">Confidentialité</a>
-      <a href="mailto:antoine.guittet@mag-cie.com">Contact</a>
+      <a href="confidentialite/">Confidentialité</a>
+      <a href="mentions-legales/">Mentions légales</a>
     </span>
   </div>
 </footer>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — AI Usage Monitor</title>
+<meta name="robots" content="all">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d97757'/%3E%3Crect x='8' y='16' width='4' height='8' rx='1.5' fill='%23fff'/%3E%3Crect x='14' y='11' width='4' height='13' rx='1.5' fill='%23fff'/%3E%3Crect x='20' y='7' width='4' height='17' rx='1.5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .legal { max-width: 760px; margin: 0 auto; padding: 40px 0 60px; }
+  .legal h1 { font-size: 32px; margin-bottom: 8px; }
+  .legal h2 { font-size: 19px; margin: 30px 0 8px; }
+  .legal p, .legal li { color: var(--muted); font-size: 15px; }
+  .legal a { color: var(--accent); }
+  .legal ul { padding-left: 20px; }
+  .backlink { display: inline-block; margin-top: 18px; color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="../"><span class="dot"></span> AI&nbsp;Usage&nbsp;Monitor</a>
+    <span class="lang" style="margin-left:auto"><a href="../mentions-legales/">Mentions légales</a></span>
+  </div>
+</header>
+<main class="wrap">
+  <div class="legal">
+    <h1>Politique de confidentialité</h1>
+    <p>Dernière mise à jour : août 2026. Responsable du traitement : MAG&amp;Cie — Antoine Guittet
+      (<a href="mailto:antoine.guittet@mag-cie.com">antoine.guittet@mag-cie.com</a>).</p>
+
+    <h2>Principe : local d'abord, aucun serveur nous appartenant</h2>
+    <p>
+      L'application AI Usage Monitor fonctionne sur votre poste. Nous n'exploitons <b>aucun serveur</b>,
+      aucune télémétrie, aucun analytics, aucun compteur d'installations. Vos données d'usage restent
+      sur votre machine.
+    </p>
+
+    <h2>Données traitées par l'application</h2>
+    <ul>
+      <li><b>Clés API / identifiants providers</b> : saisis par vous, chiffrés par le système
+        d'exploitation (Windows DPAPI via Electron safeStorage), stockés localement, jamais
+        journalisés, jamais transmis à nous.</li>
+      <li><b>Données d'usage et de coût</b> : récupérées depuis les API des providers que vous
+        configurez, stockées localement (historique de dépense).</li>
+    </ul>
+    <p>Ces données ne transitent jamais par un service nous appartenant.</p>
+
+    <h2>Destinataires (sous-traitants)</h2>
+    <ul>
+      <li><b>API des providers configurés</b> (Anthropic, OpenAI, OpenRouter, Google) — pour lire
+        votre propre usage.</li>
+      <li><b>GitHub</b> — hébergement de ce site et distribution des mises à jour de l'application.</li>
+      <li><b>Lemon Squeezy</b> — vente, facturation et validation des licences Pro (merchant of
+        record). Les données de paiement sont traitées par Lemon Squeezy, pas par nous.</li>
+    </ul>
+
+    <h2>Ce site web</h2>
+    <p>
+      Ce site est statique et n'utilise <b>ni cookie ni traceur</b>. Aucune donnée de navigation
+      n'est collectée par nos soins. Votre navigateur peut établir des connexions techniques vers
+      GitHub (hébergement).
+    </p>
+
+    <h2>Liste d'attente / contact</h2>
+    <p>
+      Si vous nous écrivez (liste d'attente macOS, support), votre adresse e-mail n'est utilisée que
+      pour vous répondre ou vous informer de la disponibilité, et n'est jamais revendue.
+    </p>
+
+    <h2>Vos droits (RGPD)</h2>
+    <p>
+      Vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition sur les
+      données que vous nous auriez communiquées. Pour l'exercer :
+      <a href="mailto:antoine.guittet@mag-cie.com">antoine.guittet@mag-cie.com</a>. Les données
+      stockées localement par l'application peuvent être supprimées en désinstallant l'application
+      ou en vidant son dossier de données.
+    </p>
+
+    <a class="backlink" href="../">← Retour à l'accueil</a>
+  </div>
+</main>
+</body>
+</html>

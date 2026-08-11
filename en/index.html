@@ -9,6 +9,15 @@
 <meta property="og:title" content="AI Usage Monitor">
 <meta property="og:description" content="Your real AI bill. Every provider. Live.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://mag-cie.github.io/ai-usage-monitor/en/">
+<meta property="og:site_name" content="AI Usage Monitor">
+<meta property="og:image" content="https://mag-cie.github.io/ai-usage-monitor/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Usage Monitor — Your real AI bill">
+<meta name="twitter:description" content="Your real, billed AI spend next to the estimate. Every provider, live, 100% local.">
+<meta name="twitter:image" content="https://mag-cie.github.io/ai-usage-monitor/og-image.png">
 <meta name="theme-color" content="#191817">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d97757'/%3E%3Crect x='8' y='16' width='4' height='8' rx='1.5' fill='%23fff'/%3E%3Crect x='14' y='11' width='4' height='13' rx='1.5' fill='%23fff'/%3E%3Crect x='20' y='7' width='4' height='17' rx='1.5' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="../styles.css">
@@ -46,12 +55,12 @@
       <div class="reveal mock" style="animation-delay:.12s" aria-label="Widget preview">
         <div class="bar"><i></i><i></i><i></i><span class="ttl">AI Usage Monitor</span></div>
         <div class="body">
-          <div class="total"><span class="big num">$234.30</span><span class="tag">real · this month</span></div>
-          <div class="caption">4 providers · updated 2&nbsp;min ago</div>
-          <div class="prow"><span class="pn"><b style="background:#d97757"></b>Anthropic</span><span class="r num">$128.40</span><span class="e num">~$131</span></div>
-          <div class="prow"><span class="pn"><b style="background:#10a37f"></b>OpenAI</span><span class="r num">$71.10</span><span class="e num">~$69</span></div>
-          <div class="prow"><span class="pn"><b style="background:#6467f2"></b>OpenRouter</span><span class="r num">$24.80</span><span class="e num">—</span></div>
-          <div class="prow"><span class="pn"><b style="background:#4285f4"></b>Gemini</span><span class="r num">$10.00</span><span class="e num">~$12</span></div>
+          <div class="total"><span class="big num">$1,247.80</span><span class="tag">real · this month</span></div>
+          <div class="caption">local estimate: ~$1,010 — <b style="color:var(--est)">+$238 under the radar</b></div>
+          <div class="prow"><span class="pn"><b style="background:#d97757"></b>Anthropic</span><span class="r num">$612.40</span><span class="e num">~$470</span></div>
+          <div class="prow"><span class="pn"><b style="background:#10a37f"></b>OpenAI</span><span class="r num">$438.10</span><span class="e num">~$452</span></div>
+          <div class="prow"><span class="pn"><b style="background:#6467f2"></b>OpenRouter</span><span class="r num">$147.30</span><span class="e num">—</span></div>
+          <div class="prow"><span class="pn"><b style="background:#4285f4"></b>Gemini</span><span class="r num">$50.00</span><span class="e num">~$38</span></div>
           <div class="legend">
             <span><i style="background:var(--real)"></i>real (billed)</span>
             <span><i style="background:var(--est)"></i>estimated (local tokens)</span>
@@ -66,17 +75,17 @@
       <div>
         <div class="eyebrow">The real number</div>
         <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800">The estimate lies. The bill doesn't.</h2>
-        <p class="muted" style="font-size:17px;margin-top:16px">Counting tokens locally gives you a ballpark — never the exact amount. AI Usage Monitor reads your <b>billed spend</b> from the official APIs and shows it <b>next to</b> the estimate. You finally see the gap, provider by provider.</p>
-        <p class="muted" style="font-size:15px">Real and estimated are <b>never</b> mixed in a single total.</p>
+        <p class="muted" style="font-size:17px;margin-top:16px">Local token counting ignores what actually drives your bill: <b>cache writes/reads</b> priced differently, <b>batch</b> discounts, <b>volume tiers</b>, shifting prices. Over a busy month the gap climbs to <b>double digits</b> — in either direction.</p>
+        <p class="muted" style="font-size:15px">AI Usage Monitor reads your <b>billed spend</b> from the official APIs and shows it next to the estimate. Real and estimated are <b>never</b> mixed in a single total.</p>
       </div>
       <div class="gap-card">
-        <div class="gap-head"><span class="k">Anthropic · Aug</span><span class="gap-delta">estimate +2.1&nbsp;%</span></div>
+        <div class="gap-head"><span class="k">Anthropic · busy month</span><span class="gap-delta">estimate −23&nbsp;%</span></div>
         <div class="gap-nums">
-          <div class="b real"><div class="lbl">Real</div><div class="v num">$128.40</div></div>
-          <div class="b est"><div class="lbl">Estimated</div><div class="v num">$131.10</div></div>
+          <div class="b real"><div class="lbl">Real (billed)</div><div class="v num">$612.40</div></div>
+          <div class="b est"><div class="lbl">Estimated</div><div class="v num">$470.10</div></div>
         </div>
-        <div class="gap-bar"><span class="fill-r" style="width:66%"></span><span class="fill-e" style="width:34%"></span></div>
-        <p class="muted" style="font-size:12.5px;margin:12px 0 0">The gap is small here — but over a busy month it adds up to tens of euros. You see it instantly.</p>
+        <div class="gap-bar"><span class="fill-r" style="width:57%"></span><span class="fill-e" style="width:43%"></span></div>
+        <p style="font-size:13px;margin:12px 0 0"><b style="color:var(--est)">$142 slipped under the radar</b> <span class="muted">— billed cache tokens and volume tiers the local count misses. That's a real bill, not an estimate within 2%.</span></p>
       </div>
     </div>
   </section>
@@ -150,8 +159,8 @@
             <li>Full widget + dashboard</li>
             <li>Real vs estimated</li>
             <li>7-day history</li>
-            <li class="off">Budget alerts</li>
-            <li class="off">Unlimited providers</li>
+            <li class="off">✕&nbsp;Budget alerts <span class="muted">(Pro)</span></li>
+            <li class="off">✕&nbsp;Unlimited providers <span class="muted">(Pro)</span></li>
           </ul>
           <a class="btn ghost" href="#download">Download</a>
         </div>
@@ -200,10 +209,10 @@
 <footer>
   <div class="wrap foot">
     <span>© 2026 MAG&amp;Cie · AI Usage Monitor</span>
-    <span style="display:flex;gap:18px">
+    <span style="display:flex;gap:18px;flex-wrap:wrap">
       <a href="https://github.com/MAG-Cie/ai-usage-monitor" target="_blank" rel="noopener">GitHub</a>
-      <a href="#privacy">Privacy</a>
-      <a href="mailto:antoine.guittet@mag-cie.com">Contact</a>
+      <a href="../confidentialite/">Privacy</a>
+      <a href="../mentions-legales/">Legal notice</a>
     </span>
   </div>
 </footer>
