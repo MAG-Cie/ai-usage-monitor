@@ -104,6 +104,8 @@ section { padding: 68px 0; }
 .badge { font-size: 10.5px; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; padding: 3px 7px; border-radius: 5px; margin-left: auto; }
 .badge.real { color: var(--real); background: color-mix(in srgb, var(--real) 16%, transparent); }
 .badge.est { color: var(--est); background: color-mix(in srgb, var(--est) 16%, transparent); }
+.badge.beta { color: var(--muted); background: color-mix(in srgb, var(--muted) 16%, transparent); }
+.prov .badge + .badge { margin-left: 0; }
 
 .privacy { background: var(--panel); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .dest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px; }

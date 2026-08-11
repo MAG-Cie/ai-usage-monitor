@@ -113,11 +113,11 @@
       <div class="section-head"><h2 style="font-size:clamp(22px,3vw,28px)">Connected providers</h2></div>
       <div class="prov-row">
         <div class="prov"><span class="pdot" style="background:#d97757">A</span><span class="pmeta"><b>Anthropic</b><span>API Console · Claude Code local</span></span><span class="badge real">real</span></div>
-        <div class="prov"><span class="pdot" style="background:#10a37f">O</span><span class="pmeta"><b>OpenAI</b><span>Org costs &amp; usage</span></span><span class="badge real">real</span></div>
-        <div class="prov"><span class="pdot" style="background:#6467f2">R</span><span class="pmeta"><b>OpenRouter</b><span>Activity &amp; credits</span></span><span class="badge real">real</span></div>
-        <div class="prov"><span class="pdot" style="background:#4285f4">G</span><span class="pmeta"><b>Gemini</b><span>Monitoring · BigQuery billing</span></span><span class="badge est">real/estimated</span></div>
+        <div class="prov"><span class="pdot" style="background:#10a37f">O</span><span class="pmeta"><b>OpenAI</b><span>Org costs &amp; usage</span></span><span class="badge real">real</span><span class="badge beta">beta</span></div>
+        <div class="prov"><span class="pdot" style="background:#6467f2">R</span><span class="pmeta"><b>OpenRouter</b><span>Activity &amp; credits</span></span><span class="badge real">real</span><span class="badge beta">beta</span></div>
+        <div class="prov"><span class="pdot" style="background:#4285f4">G</span><span class="pmeta"><b>Gemini</b><span>Monitoring · BigQuery billing</span></span><span class="badge est">real/estimated</span><span class="badge beta">beta</span></div>
       </div>
-      <p class="muted" style="font-size:13px;margin-top:16px">All data goes through <b>official APIs</b> — no scraping. Gemini requires an advanced GCP setup (kept out of the install flow).</p>
+      <p class="muted" style="font-size:13px;margin-top:16px">All data goes through <b>official APIs</b> — no scraping. <b>Anthropic</b> is verified against live data; OpenAI, OpenRouter and Gemini are in <b>beta</b> (adapters being validated). Gemini requires an advanced GCP setup (kept out of the install flow).</p>
     </div>
   </section>
 
@@ -189,7 +189,7 @@
       <details><summary>Are my API keys safe?</summary><p>Yes. They're OS-encrypted (Windows DPAPI via Electron safeStorage) before touching disk, never logged, and only sent to their own provider's API.</p></details>
       <details><summary>Is there a subscription?</summary><p>No. Pro is a one-time purchase (€14.99) with 2 activations and updates included. Free stays free indefinitely.</p></details>
       <details><summary>Does Windows warn on launch?</summary><p>Early builds aren't signed with an OV certificate yet, so SmartScreen may show "unknown publisher". Verify your download via the VirusTotal link on the release page.</p></details>
-      <details><summary>What about macOS / Linux?</summary><p>Windows ships first. macOS is planned — join the waitlist below.</p></details>
+      <details><summary>What about macOS / Linux?</summary><p>Windows ships first; macOS and Linux are under consideration.</p></details>
     </div>
   </section>
 
@@ -201,7 +201,7 @@
         <a class="btn lg" href="https://github.com/MAG-Cie/ai-usage-monitor/releases/latest" target="_blank" rel="noopener">Download for Windows</a>
         <a class="btn ghost lg" href="#pricing">Compare Free / Pro</a>
       </div>
-      <p class="waitlist">macOS coming soon — <a href="mailto:antoine.guittet@mag-cie.com?subject=AI%20Usage%20Monitor%20%E2%80%94%20macOS%20waitlist">join the waitlist</a></p>
+      <p class="waitlist">Windows first · macOS under consideration</p>
     </div>
   </section>
 </main>
