@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Usage Monitor — Ta vraie facture IA, tous providers, en direct</title>
+<meta name="description" content="Suivez votre dépense IA réelle (Anthropic, OpenAI, OpenRouter, Gemini) face à l'estimation, dans un widget Windows 100 % local. Sans télémétrie.">
+<link rel="canonical" href="https://mag-cie.github.io/ai-usage-monitor/">
+<meta property="og:title" content="AI Usage Monitor">
+<meta property="og:description" content="Ta vraie facture IA. Tous providers. En direct.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#191817">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23d97757'/%3E%3Crect x='8' y='16' width='4' height='8' rx='1.5' fill='%23fff'/%3E%3Crect x='14' y='11' width='4' height='13' rx='1.5' fill='%23fff'/%3E%3Crect x='20' y='7' width='4' height='17' rx='1.5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="dot"></span> AI&nbsp;Usage&nbsp;Monitor</a>
+    <nav class="links">
+      <a href="#preuve">Réel vs estimé</a>
+      <a href="#features">Fonctions</a>
+      <a href="#privacy">Confidentialité</a>
+      <a href="#pricing">Prix</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <span class="lang"><a class="on" href="./">FR</a><a href="en/">EN</a></span>
+    <a class="btn" href="#download">Télécharger</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">Windows · bureau · 100&nbsp;% local</div>
+        <h1>Ta <span class="accent">vraie facture</span> IA.<br>Tous providers. En&nbsp;direct.</h1>
+        <p class="lede">Anthropic, OpenAI, OpenRouter, Gemini — la dépense <b>réelle</b> face à l'estimée, dans un widget toujours au premier plan.</p>
+        <div class="cta-row">
+          <a class="btn lg" href="#download">Télécharger pour Windows</a>
+          <a class="btn ghost lg" href="#pricing">Voir le prix</a>
+        </div>
+        <p class="sub-note">Gratuit pour 1 provider · Pro dès 14,99&nbsp;€ · sans compte, sans télémétrie.</p>
+      </div>
+      <div class="reveal mock" style="animation-delay:.12s" aria-label="Aperçu du widget">
+        <div class="bar"><i></i><i></i><i></i><span class="ttl">AI Usage Monitor</span></div>
+        <div class="body">
+          <div class="total"><span class="big num">$234.30</span><span class="tag">réel · ce mois</span></div>
+          <div class="caption">4 providers · mis à jour il y a 2&nbsp;min</div>
+          <div class="prow"><span class="pn"><b style="background:#d97757"></b>Anthropic</span><span class="r num">$128.40</span><span class="e num">~$131</span></div>
+          <div class="prow"><span class="pn"><b style="background:#10a37f"></b>OpenAI</span><span class="r num">$71.10</span><span class="e num">~$69</span></div>
+          <div class="prow"><span class="pn"><b style="background:#6467f2"></b>OpenRouter</span><span class="r num">$24.80</span><span class="e num">—</span></div>
+          <div class="prow"><span class="pn"><b style="background:#4285f4"></b>Gemini</span><span class="r num">$10.00</span><span class="e num">~$12</span></div>
+          <div class="legend">
+            <span><i style="background:var(--real)"></i>réel (facturé)</span>
+            <span><i style="background:var(--est)"></i>estimé (tokens locaux)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preuve" class="proof">
+    <div class="wrap proof-grid">
+      <div>
+        <div class="eyebrow">Le vrai chiffre</div>
+        <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800">L'estimation ment. La facture, non.</h2>
+        <p class="muted" style="font-size:17px;margin-top:16px">Compter les tokens localement donne un ordre de grandeur — jamais le montant exact. AI Usage Monitor lit la <b>dépense facturée</b> via les API officielles et l'affiche <b>à côté</b> de l'estimation. Tu vois enfin l'écart, provider par provider.</p>
+        <p class="muted" style="font-size:15px">Réel et estimé ne sont <b>jamais</b> mélangés dans un même total.</p>
+      </div>
+      <div class="gap-card">
+        <div class="gap-head"><span class="k">Anthropic · août</span><span class="gap-delta">estimation +2,1&nbsp;%</span></div>
+        <div class="gap-nums">
+          <div class="b real"><div class="lbl">Réel</div><div class="v num">$128.40</div></div>
+          <div class="b est"><div class="lbl">Estimé</div><div class="v num">$131.10</div></div>
+        </div>
+        <div class="gap-bar"><span class="fill-r" style="width:66%"></span><span class="fill-e" style="width:34%"></span></div>
+        <p class="muted" style="font-size:12.5px;margin:12px 0 0">L'écart est faible ici — mais sur un mois chargé, il se chiffre en dizaines d'euros. Tu le vois immédiatement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Ce que tu obtiens</div>
+        <h2>Tout ton budget IA, en un coup d'œil</h2>
+        <p>Un widget compact toujours visible, un tableau de bord détaillé, zéro configuration serveur.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="card"><div class="ico">🔗</div><h3>Multi-provider</h3><p>Anthropic, OpenAI, OpenRouter, Gemini réunis. Ajoute une clé, le total s'agrège.</p></div>
+        <div class="card"><div class="ico">⚖️</div><h3>Réel vs estimé</h3><p>Dépense facturée et estimation locale côte à côte, avec l'écart en $ et en&nbsp;%.</p></div>
+        <div class="card"><div class="ico">🔔</div><h3>Alertes de budget</h3><p>Sois notifié quand la dépense réelle atteint un seuil mensuel, journalier ou par provider.</p></div>
+        <div class="card"><div class="ico">📈</div><h3>Historique &amp; projection</h3><p>Suivi jour par jour, projection de fin de mois, jour pic — 100&nbsp;% local.</p></div>
+        <div class="card"><div class="ico">⚡</div><h3>Prêt en 60&nbsp;s</h3><p>Assistant de premier lancement : colle une clé, teste la connexion, c'est parti.</p></div>
+        <div class="card"><div class="ico">🌍</div><h3>FR · EN · DE · ES</h3><p>Interface traduite, détection automatique de la langue du système.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><h2 style="font-size:clamp(22px,3vw,28px)">Providers branchés</h2></div>
+      <div class="prov-row">
+        <div class="prov"><span class="pdot" style="background:#d97757">A</span><span class="pmeta"><b>Anthropic</b><span>API Console · Claude Code local</span></span><span class="badge real">réel</span></div>
+        <div class="prov"><span class="pdot" style="background:#10a37f">O</span><span class="pmeta"><b>OpenAI</b><span>Org costs &amp; usage</span></span><span class="badge real">réel</span></div>
+        <div class="prov"><span class="pdot" style="background:#6467f2">R</span><span class="pmeta"><b>OpenRouter</b><span>Activity &amp; credits</span></span><span class="badge real">réel</span></div>
+        <div class="prov"><span class="pdot" style="background:#4285f4">G</span><span class="pmeta"><b>Gemini</b><span>Monitoring · BigQuery billing</span></span><span class="badge est">réel/estimé</span></div>
+      </div>
+      <p class="muted" style="font-size:13px;margin-top:16px">Toutes les données passent par des <b>API officielles</b> — aucun scraping. Gemini demande une config GCP avancée (renvoyée hors du parcours d'installation).</p>
+    </div>
+  </section>
+
+  <section id="privacy" class="privacy">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Confidentialité par conception</div>
+        <h2>Aucun serveur ne nous appartient</h2>
+        <p>Pas de télémétrie, pas d'analytics, pas de compteur d'installations. Tes clés sont chiffrées par l'OS (DPAPI) et ne quittent jamais ta machine en clair.</p>
+      </div>
+      <div class="dest-grid">
+        <div class="dest"><div class="n">1 · Providers</div><h4>Les API que tu configures</h4><p>Uniquement pour lire ton propre usage : api.anthropic.com, api.openai.com, openrouter.ai, googleapis.com.</p></div>
+        <div class="dest"><div class="n">2 · GitHub</div><h4>Mises à jour</h4><p>Vérification et téléchargement des nouvelles versions via les releases GitHub. Rien d'autre.</p></div>
+        <div class="dest"><div class="n">3 · Lemon Squeezy</div><h4>Licence</h4><p>Activation / validation de la clé Pro via l'API publique de licences. Le paiement se fait dans ton navigateur.</p></div>
+      </div>
+      <div class="pill-list">
+        <span class="pill no">✕ aucune télémétrie</span>
+        <span class="pill no">✕ aucun analytics</span>
+        <span class="pill no">✕ aucun backend</span>
+        <span class="pill">clés en safeStorage (DPAPI)</span>
+        <span class="pill">jamais loggées</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center;margin-left:auto;margin-right:auto">
+        <div class="eyebrow">Tarif simple</div>
+        <h2>Gratuit pour commencer. Pro quand tu veux tout voir.</h2>
+      </div>
+      <div class="price-grid">
+        <div class="plan">
+          <div class="pname">Free</div>
+          <div class="amount num">0&nbsp;€</div>
+          <span class="muted" style="font-size:13px">pour toujours</span>
+          <ul>
+            <li>1 provider suivi</li>
+            <li>Widget + tableau de bord complets</li>
+            <li>Réel vs estimé</li>
+            <li>Historique 7 jours</li>
+            <li class="off">Alertes de budget</li>
+            <li class="off">Providers illimités</li>
+          </ul>
+          <a class="btn ghost" href="#download">Télécharger</a>
+        </div>
+        <div class="plan pro">
+          <span class="flag">Recommandé</span>
+          <div class="pname">Pro</div>
+          <div class="amount num">14,99&nbsp;€ <small>/ à vie</small></div>
+          <span class="muted" style="font-size:13px">2 postes par clé</span>
+          <ul>
+            <li><b>Providers illimités</b></li>
+            <li>Alertes de budget (mensuel / jour / provider)</li>
+            <li>Historique &amp; projection illimités</li>
+            <li>Mises à jour incluses</li>
+            <li>Remboursement 14 jours</li>
+          </ul>
+          <a class="btn" href="https://magcie.lemonsqueezy.com/checkout/buy/094a9c50-e5b5-4889-94c3-867349fbf61a" target="_blank" rel="noopener">Passer Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap faq">
+      <div class="section-head" style="text-align:center;margin:0 auto 32px"><h2>Questions fréquentes</h2></div>
+      <details open><summary>Comment lisez-vous ma « vraie » dépense ?</summary><p>Via les API officielles de facturation/usage de chaque provider (Admin API Anthropic, Organization costs OpenAI, Activity OpenRouter, BigQuery billing Gemini). C'est le montant facturé, pas une estimation.</p></details>
+      <details><summary>Mes clés API sont-elles en sécurité ?</summary><p>Oui. Elles sont chiffrées par l'OS (Windows DPAPI via Electron safeStorage) avant d'atteindre le disque, ne sont jamais journalisées, et ne sont envoyées qu'à l'API de leur propre provider.</p></details>
+      <details><summary>Y a-t-il un abonnement ?</summary><p>Non. Pro est un achat unique (14,99&nbsp;€) avec 2 activations et les mises à jour incluses. La version Free reste gratuite indéfiniment.</p></details>
+      <details><summary>Windows affiche un avertissement au lancement ?</summary><p>Les premières versions ne sont pas encore signées avec un certificat OV, donc SmartScreen peut afficher « éditeur inconnu ». Vérifie ton téléchargement via le lien VirusTotal sur la page de release.</p></details>
+      <details><summary>Et macOS / Linux ?</summary><p>La version Windows est disponible en premier. macOS est prévu — rejoins la liste d'attente ci-dessous.</p></details>
+    </div>
+  </section>
+
+  <section id="download" class="final">
+    <div class="wrap">
+      <h2>Arrête d'estimer. Regarde la facture.</h2>
+      <p>Télécharge AI Usage Monitor et connecte ton premier provider en moins d'une minute.</p>
+      <div class="cta-row" style="justify-content:center;display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn lg" href="https://github.com/MAG-Cie/ai-usage-monitor/releases/latest" target="_blank" rel="noopener">Télécharger pour Windows</a>
+        <a class="btn ghost lg" href="#pricing">Comparer Free / Pro</a>
+      </div>
+      <p class="waitlist">macOS bientôt — <a href="mailto:antoine.guittet@mag-cie.com?subject=AI%20Usage%20Monitor%20%E2%80%94%20liste%20macOS">rejoindre la liste d'attente</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 MAG&amp;Cie · AI Usage Monitor</span>
+    <span style="display:flex;gap:18px">
+      <a href="https://github.com/MAG-Cie/ai-usage-monitor" target="_blank" rel="noopener">GitHub</a>
+      <a href="#privacy">Confidentialité</a>
+      <a href="mailto:antoine.guittet@mag-cie.com">Contact</a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>
