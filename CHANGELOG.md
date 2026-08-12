@@ -6,7 +6,9 @@ fichier.
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
-## [Unreleased]
+## [1.0.0] - 2026-08-12
+
+Première version publique.
 
 ### Added
 
