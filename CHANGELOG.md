@@ -6,6 +6,14 @@ fichier.
 Le format suit [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.1.0] - 2026-08-12
+
+### Added
+
+- **Lancer au démarrage** : case « Lancer au démarrage de Windows » dans
+  Réglages › Préférences, câblée sur `app.setLoginItemSettings` (l'app se lance
+  automatiquement à l'ouverture de session).
+
 ## [1.0.0] - 2026-08-12
 
 Première version publique.

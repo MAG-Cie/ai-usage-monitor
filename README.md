@@ -72,7 +72,9 @@ All data goes through **official APIs** — no scraping, no telemetry.
 1. [Download the latest release](https://github.com/MAG-Cie/ai-usage-monitor/releases/latest) (`AI-Usage-Monitor-Setup-x.y.z.exe`).
 2. Run it. Auto-updates are enabled for future versions.
 
-> ⚠️ Early builds are **not yet code-signed** with an OV certificate, so Windows SmartScreen may warn ("unknown publisher"). Click *More info → Run anyway*. The installer is scanned clean on VirusTotal (**0 / N vendors flagged**). Code signing will come once the product is established.
+> ⚠️ Early builds are **not yet code-signed** with an OV certificate, so Windows SmartScreen may warn ("unknown publisher"). Click *More info → Run anyway*. The installer is scanned clean on VirusTotal (**0 detections**). Code signing will come once the product is established.
+
+**Launch at startup:** Settings → Preferences → check *Launch at Windows startup*.
 
 ## Privacy & security
 
