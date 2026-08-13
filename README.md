@@ -22,6 +22,14 @@
   <a href="https://mag-cie.github.io/ai-usage-monitor/en/">English site</a>
 </p>
 
+<p align="center">
+  <video src="https://github.com/MAG-Cie/ai-usage-monitor/raw/main/media/promo.mp4" controls muted loop width="820"></video>
+</p>
+<p align="center">
+  <em>▶ 24-second overview</em> — if the player doesn't load,
+  <a href="https://github.com/MAG-Cie/ai-usage-monitor/raw/main/media/promo.mp4">watch the demo</a>.
+</p>
+
 ---
 
 ## Why
