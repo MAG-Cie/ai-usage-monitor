@@ -72,7 +72,7 @@ All data goes through **official APIs** — no scraping, no telemetry.
 | CSV export | — | ✅ |
 | Updates | ✅ | ✅ |
 
-[**Get Pro →**](https://magcie.lemonsqueezy.com/checkout/buy/094a9c50-e5b5-4889-94c3-867349fbf61a) · sold via Lemon Squeezy · 14-day refund.
+[**Get Pro →**](https://magcie.lemonsqueezy.com/checkout/buy/5593d3f5-a40f-4605-a5b5-4d27fc44144e) · sold via Lemon Squeezy · 14-day refund.
 
 ## Install
 
