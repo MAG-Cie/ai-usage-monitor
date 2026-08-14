@@ -42,8 +42,8 @@ AI Usage Monitor reads your **billed spend** from each provider's official API a
 | Provider | Sources | Cost basis | Status |
 |----------|---------|------------|--------|
 | **Anthropic** | API Console (Admin API) · Claude Code local | real + estimated | ✅ verified |
-| **OpenAI** | Organization costs & usage | real | 🧪 beta |
-| **OpenRouter** | Activity & credits | real | 🧪 beta |
+| **OpenAI** | Organization costs & usage | real | ✅ verified |
+| **OpenRouter** | Activity & credits | real | ✅ verified |
 | **Gemini** | Cloud Monitoring · BigQuery billing | estimated + real | 🧪 beta |
 
 > Beta = the adapter is written against provider docs and still being validated against live accounts. If a response shape differs, the provider shows **unavailable** rather than a wrong number.
