@@ -43,7 +43,7 @@ AI Usage Monitor reads your **billed spend** from each provider's official API a
 |----------|---------|------------|--------|
 | **Anthropic** | API Console (Admin API) · Claude Code local | real + estimated | ✅ verified |
 | **OpenAI** | Organization costs & usage | real | ✅ verified |
-| **OpenRouter** | Activity & credits | real | 🧪 beta |
+| **OpenRouter** | Activity & credits | real | ✅ verified |
 | **Gemini** | Cloud Monitoring · BigQuery billing | estimated + real | 🧪 beta |
 | **Mistral** | Organization admin usage & billing | real | 🧪 beta — needs an org **Admin API key** (Team/Enterprise); standard keys can't read cost |
 
