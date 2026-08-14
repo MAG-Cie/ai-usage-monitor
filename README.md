@@ -45,7 +45,7 @@ AI Usage Monitor reads your **billed spend** from each provider's official API a
 | **OpenAI** | Organization costs & usage | real | ✅ verified |
 | **OpenRouter** | Activity & credits | real | 🧪 beta |
 | **Gemini** | Cloud Monitoring · BigQuery billing | estimated + real | 🧪 beta |
-| **Mistral** | Organization admin usage & billing | real | 🧪 beta |
+| **Mistral** | Organization admin usage & billing | real | 🧪 beta — needs an org **Admin API key** (Team/Enterprise); standard keys can't read cost |
 
 > Beta = the adapter is written against provider docs and still being validated against live accounts. If a response shape differs, the provider shows **unavailable** rather than a wrong number.
 
