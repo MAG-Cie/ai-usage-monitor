@@ -45,8 +45,11 @@ AI Usage Monitor reads your **billed spend** from each provider's official API a
 | **OpenAI** | Organization costs & usage | real | ✅ verified |
 | **OpenRouter** | Activity & credits | real | ✅ verified |
 | **Gemini** | Cloud Monitoring · BigQuery billing | estimated + real | 🧪 beta |
+| **Mistral** | Organization admin usage & billing | real | 🧪 beta |
 
 > Beta = the adapter is written against provider docs and still being validated against live accounts. If a response shape differs, the provider shows **unavailable** rather than a wrong number.
+
+> **DeepSeek** is supported as a **remaining-balance** indicator only — it exposes no spend-over-time API, so it's kept separate from the real-vs-estimated spend view.
 
 All data goes through **official APIs** — no scraping, no telemetry.
 
